@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "vite --host"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "vite": "^5.3.4"
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./outputStyle.css" />
+    <link rel="stylesheet" href="./inputStyle.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Code Hunt</title>
+  </head>
+  <body>
+    <script src="./script.js" defer></script>
+    <!-- Added defer to ensure script loads after DOM -->
+    <nav
+      class="flex flex-row p-4 grade text-white md:justify-start justify-center"
+    >
+      <ul>
+        <li class="text-2xl font-semibold">Code Hunt</li>
+      </ul>
+    </nav>
+    <main class="flex flex-col place-items-center justify-center">
+      <div class="scene scene--card flex flexx-col justify-center">
+        <div class="grade h-96 rounded-xl sm:w-96 w-[310px] card">
+          <div
+            class="card__face card__face--front rounded-lg flex flex-col place-items-center"
+          >
+            <h1 class="text-2xl my-5 font-semibold">
+              Binary to String Converter
+            </h1>
+            <div class="flex flex-col">
+              <label for="b2s" class="text-xl my-2">Enter Binary code</label>
+              <div class="flex flex-row">
+                <input
+                  type="text"
+                  name="b2s"
+                  id="b2sInput"
+                  placeholder=" e.g 10101010"
+                  class="rounded-md border-none text-black px-1 sm:w-auto w-[180px]"
+                />
+                <button
+                  class="px-2 py-[6px] bg-purple-700 rounded-md mx-[11px]"
+                  id="b2s"
+                >
+                  Convert
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="container border-2 border-gray-500 my-4 h-[200px] sm:w-[300px] w-[270px]"
+            >
+              <textarea
+                id="b2sOutput"
+                cols="33"
+                rows="7"
+                class="bg-transparent px-2 py-[14px] border-none outline-none"
+                disabled
+              ></textarea>
+            </div>
+          </div>
+          <div
+            class="card__face card__face--back rounded-lg flex flex-col place-items-center"
+          >
+            <h1 class="text-2xl my-5 font-semibold">
+              String to Binary Converter
+            </h1>
+            <div class="flex flex-col">
+              <label for="s2b" class="text-xl my-2"
+                >Enter String of characters</label
+              >
+              <div class="flex flex-row">
+                <input
+                  type="text"
+                  name="s2b"
+                  id="s2bInput"
+                  placeholder=" e.g 10101010"
+                  class="rounded-md border-none text-black px-1 sm:w-auto w-[180px]"
+                />
+                <button
+                  class="px-2 py-[6px] bg-purple-700 rounded-md mx-[11px]"
+                  id="s2b"
+                >
+                  Convert
+                </button>
+              </div>
+            </div>
+            <div
+              class="container border-2 border-gray-500 my-4 h-[200px] sm:w-[300px] w-[270px]"
+            >
+              <textarea
+                cols="33"
+                rows="7"
+                id="s2bOutput"
+                class="bg-transparent px-2 py-[14px] border-none outline-none"
+                disabled
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space-x-4">
+        <button
+          type="button"
+          class="px-4 py-2 rounded-md text-white bg-[blue] prev-btn"
+        >
+          &lAarr; Prev
+        </button>
+        <button
+          type="button"
+          class="px-4 py-2 rounded-md text-white bg-[blue] next-btn"
+        >
+          Next &rAarr;
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
